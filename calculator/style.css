@@ -1,0 +1,67 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    height: 490px;
+    width: 506px;
+    border: 3px solid black;
+    background-color:black ;
+    
+}
+
+#display{
+    height: 70px;
+    width: 420px;
+    margin-top: 25px;
+    margin-left: 40px ;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+#ans{
+    text-align: center;
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 350px;
+    margin-top: 25px;
+    margin-left: 50px ;
+}
+.cols{
+    width: 100px;
+    height: 360px;
+    margin-left: 10px;
+}
+
+.operator{
+     width: 100px;
+    height: 50px;
+    margin-bottom: 20px;
+        font-weight: bold;
+
+}
+.num{
+     width: 100px;
+    height: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#equal{
+     width: 100px;
+    height: 260px;
+        font-weight: bold;
+
+}
