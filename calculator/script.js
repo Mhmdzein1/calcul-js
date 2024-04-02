@@ -20,6 +20,9 @@ divide=document.getElementById("/");
 plus.addEventListener("click" , add);
 
 function add(){
+    if(    ans.innerHTML===" "){
+        return;
+    }
     ans.innerHTML+= "+"
 }
 
@@ -50,7 +53,10 @@ function pnt(){
 divide.addEventListener("click" , div);
 
 function div(){
-    ans.innerHTML+=7
+    if(    ans.innerHTML===" "){
+        return;
+    }
+    ans.innerHTML+="/"
 }
 
 four.addEventListener("click" , fore);
@@ -74,6 +80,9 @@ function ziro(){
 minus.addEventListener("click" , substract);
 
 function substract(){
+    if(    ans.innerHTML===" "){
+        return;
+    }
     ans.innerHTML+= "-"
 }
 
@@ -98,7 +107,10 @@ function too(){
 timez.addEventListener("click" , multiply);
 
 function multiply(){
-    ans.innerHTML+=x
+    if(    ans.innerHTML===" "){
+        return;
+    }
+    ans.innerHTML+="*"
 }
 
 nine.addEventListener("click" , nin);
@@ -113,7 +125,7 @@ function nin(){
 clear.addEventListener("click" , clr);
 
 function clr(){
-    ans.innerHTML=""
+    ans.innerHTML='';
 }
 
 eql.addEventListener("click" , calculate);
