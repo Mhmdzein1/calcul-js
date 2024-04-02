@@ -2,23 +2,24 @@ plus=document.getElementById("+");
 seven=document.getElementById("7");
 clear=document.getElementById("c");
 
-plus.addEventListener("click" , huww);
+plus.addEventListener("click" , add);
 
-function huww(){
+function add(){
     ans.innerHTML+= "+"
 }
 
-seven.addEventListener("click" , huw);
+seven.addEventListener("click" , sev);
 
-function huw(){
+function sev(){
     ans.innerHTML+=7
 }
 
-clear.addEventListener("click" , hu);
+clear.addEventListener("click" , clr);
 
-function hu(){
+function clr(){
     ans.innerHTML=""
 }
+
 
 
 
