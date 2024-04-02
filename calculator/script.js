@@ -125,7 +125,7 @@ function nin(){
 clear.addEventListener("click" , clr);
 
 function clr(){
-    ans.innerHTML='';
+    ans.innerHTML=" ";
 }
 
 eql.addEventListener("click" , calculate);
