@@ -5,7 +5,7 @@ one=document.getElementById("1");
 zero=document.getElementById("0");
 minus=document.getElementById("-");
 eight=document.getElementById("8");
-fi=document.getElementById("5");
+five=document.getElementById("5");
 two=document.getElementById("2");
 timez=document.getElementById("x");
 nine=document.getElementById("9");
@@ -13,8 +13,12 @@ six=document.getElementById("6");
 three=document.getElementById("3");
 point=document.getElementById(".");
 clear=document.getElementById("c");
-eql=document.getElementById("equal");
+equal=document.getElementById("equal");
 divide=document.getElementById("/");
+
+
+
+
 
 
 plus.addEventListener("click" , add);
@@ -26,48 +30,48 @@ function add(){
     ans.innerHTML+= "+"
 }
 
-seven.addEventListener("click" , sev);
+seven.addEventListener("click" , numSeven);
 
-function sev(){
+function numSeven(){
     ans.innerHTML+=7
 }
 
 
-six.addEventListener("click" , sx);
+six.addEventListener("click" , numSix);
 
-function sx(){
+function numSix(){
     ans.innerHTML+=6
 }
-three.addEventListener("click" , thri);
+three.addEventListener("click" , numThree);
 
-function thri(){
+function numThree(){
     ans.innerHTML+=3
 }
 
-point.addEventListener("click" , pnt);
+point.addEventListener("click" , dot);
 
-function pnt(){
+function dot(){
     ans.innerHTML+="."
 }
 
-divide.addEventListener("click" , div);
+divide.addEventListener("click" , division);
 
-function div(){
+function division(){
     if(    ans.innerHTML===" "){
         return;
     }
     ans.innerHTML+="/"
 }
 
-four.addEventListener("click" , fore);
+four.addEventListener("click" , numfour);
 
-function fore(){
+function numfour(){
     ans.innerHTML+=4
 }
 
-one.addEventListener("click" , won);
+one.addEventListener("click" , numOne);
 
-function won(){
+function numOne(){
     ans.innerHTML+=1
 }
 
@@ -86,21 +90,21 @@ function substract(){
     ans.innerHTML+= "-"
 }
 
-eight.addEventListener("click" , ait);
+eight.addEventListener("click" , numEight);
 
-function ait(){
+function numEight(){
     ans.innerHTML+=8
 }
 
-fi.addEventListener("click" , fiv);
+five.addEventListener("click" , numFive);
 
-function fiv(){
+function numFive(){
     ans.innerHTML+=5
 }
 
-two.addEventListener("click" , too);
+two.addEventListener("click" , numTwo);
 
-function too(){
+function numTwo(){
     ans.innerHTML+=2
 }
 
@@ -113,22 +117,19 @@ function multiply(){
     ans.innerHTML+="*"
 }
 
-nine.addEventListener("click" , nin);
+nine.addEventListener("click" , numNine);
 
-function nin(){
+function numNine(){
     ans.innerHTML+=9
 }
 
+clear.addEventListener("click" , clearOutput);
 
-
-
-clear.addEventListener("click" , clr);
-
-function clr(){
+function clearOutput(){
     ans.innerHTML=" ";
 }
 
-eql.addEventListener("click" , calculate);
+equal.addEventListener("click" , calculate);
 
 function calculate(){
     ans.innerHTML=eval( ans.innerHTML);
