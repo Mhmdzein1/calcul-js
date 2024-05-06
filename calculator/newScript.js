@@ -6,11 +6,11 @@ const buttonIds = [
   buttonIds.forEach(function(id) {
     const button = document.getElementById(id);
     button.addEventListener("click", function() {
-      handleButtonClick(id);
+      cases(id);
     });
   });
   
-  function handleButtonClick(value) {
+  function cases(value) {
     
     if (value === "c") {
       ans.innerHTML = " ";
